@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div class='container walk-container'>
+	<div class='row page-bottom'>
+		<div class='col-md-11'>
+			<h1>Walks</h1>
+
+			<p>
+				As I said, here are a few walks I have designed around Adlington and the outskirts of the village.
+			</p>
+			<p>
+				Obviously, these are not compulsory and do not need to be followed to the letter, they are just guides that I think will enable you to get the best out of the village. None of the walks are too taxing, there are no major inclines in the village, so walking shoes or strong trainers should suffice but they might get a bit muddy. Please use the footpaths when available. Where footpaths are not available, please stay as close to the side of the road as possible, facing oncoming traffic.
+			</p>
+
+			<p>
+				There are a good number of pubs that serve food and you will also see a few restaurants or takeaways on your travels, which is good as you will need something to eat on most of the walks. You could even return later to try one.
+			</p>
+			<p>
+				There are 4 free cashpoints in the village, marked on the main map. There is one at the RBS as you turn left from the train station, one in the Co-op just to the left of the RBS, one in the Co-op at the top of the village, not far from the Top Spinners and one at Tesco.
+			</p>
+			<img src='{{ site.baseurl }}/static/images/rivingtonwide.png' class='walk-img img-thumbnail'/>
+			<p>
+				Every walk is available in a PDF format with a map on the first page and the route shown in purple, and an alternative route shown in green (if applicable). If you have done it one way and you liked it, you can always try it again, the same way or reverse the route! The main thing is you have a good time and good Ale!
+			</p>
+		</div>
+	</div>
+	<div class='row page-bottom'>
+		<div id='walks-container' class='col-md-12' data-bind="foreach: walkList">
+			<div class='row'>
+				<div class='col-md-12'>
+					<h4><a target='_blank' data-bind="text: title, attr: {href: link}"></a></h4>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-4'>
+					<p>Beer Rating: <span data-bind="text: beer"></span></p>
+					<p>Distance Rating: <span data-bind="text: distance"></span></p>
+				</div>
+				<div class='col-md-6'>
+					<p data-bind="text: description"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="{{ site.baseurl }}/static/js/walks.js"></script>

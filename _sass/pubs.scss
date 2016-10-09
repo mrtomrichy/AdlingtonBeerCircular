@@ -1,0 +1,166 @@
+/* PUB PAGE STYLING */
+
+#pubs {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #pub-nav-side {
+    display: block;
+  }
+
+  #dropdown-wrapper {
+    display: none;
+    position: relative;
+
+    .dropdown-menu {
+      background-color: $color-body-white;
+      padding: 0;
+      overflow: hidden;
+      border-radius: 0;
+
+      > li {
+        border-bottom: 1px solid #DDD;
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+
+        > a {
+          padding: 8px 8px 8px 20px;
+          font-size: 18px;
+          font-family: "Lato", helvetica;
+          color: $color-text-grey;
+          position: relative;
+
+          &:hover, &:focus {
+            &:before {
+              position: absolute;
+              left: 0;
+              top: 0;
+              border-top: 21px solid transparent;
+              border-bottom: 21px solid transparent;
+              border-left: 12px solid $color-abc-red;
+              content: "";
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nav-pills > li{
+    font-family: "Lato", helvetica;
+    font-size: 16px;
+
+    a {
+      border-radius: 0;
+      color: $color-text-grey;
+
+      &:hover, &:focus {
+        color: $color-text-grey;
+      }
+    }
+
+    &.active {
+      > a {
+        background-color: $color-abc-red !important;
+        color: white !important;
+      }
+
+      &:after {
+         content: "";
+         border-top: 21px solid transparent;
+         border-bottom: 21px solid transparent;
+         border-left: 10px solid $color-abc-red;
+         position: absolute;
+         right: -10px;
+         top: 0;
+      }
+    }
+  }
+
+  #pub-name, .dropdown-toggle {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 32px;
+  }
+
+  .dropdown-toggle {
+    cursor: pointer;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+  }
+
+  #pub-description {
+    line-height: 26px;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  #pub-facilities > li {
+    list-style-type: square;
+    color: $color-text-grey;
+    line-height: 22px;
+    font-family: "Lato", helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+  .pub-img-wrapper {
+    background: $color-body-dark;
+    padding: 4px;
+    position: relative;
+    border-radius: 2px;
+
+    &:after {
+      position: absolute;
+      bottom: -50px;
+      right: 0;
+      content: "";
+      border-left: 100px solid $color-body-dark-accent;
+      border-bottom: 50px solid transparent;
+    }
+
+    .pub-image {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .separator {
+    height: 3px;
+    width: 100%;
+    background: $abc-gradient-dark;
+  }
+
+  @media (max-width: 991px) {
+    #pub-nav-side {
+      display: none;
+    }
+    #dropdown-wrapper {
+      display: block;
+    }
+    #pub-name {
+      display: none;
+    }
+    #back-to-nav {
+      display: inline-block;
+    }
+    .pub-container {
+      margin-top: 0;
+    }
+    .info-row {
+      margin-top: 30px;
+    }
+  }
+}

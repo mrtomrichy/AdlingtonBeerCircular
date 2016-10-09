@@ -1,0 +1,10 @@
+$color-body-white: #fdfdfd;
+$color-body-dark: #222;
+$color-body-dark-accent: #666;
+
+$color-abc-red: #a72d2d;
+$color-abc-blue: #3194bd;
+$color-text-grey: #333;
+$color-text-light-grey: #ececec;
+$abc-gradient: linear-gradient(to right, #fff 0, $color-abc-red 33%, $color-abc-blue 100%);
+$abc-gradient-dark: linear-gradient(to right, #333 0, $color-abc-red 33%, $color-abc-blue 100%);

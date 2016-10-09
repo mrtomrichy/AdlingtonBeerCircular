@@ -1,0 +1,41 @@
+@import "https://fonts.googleapis.com/css?family=Lato:300,400";
+
+@import "navbar.scss";
+$footer-height: 148px;
+
+.content {
+  background: $color-body-white;
+  min-height: calc(100% - #{$footer-height});
+}
+
+.footer {
+  background: $abc-gradient-dark;
+  padding-top: 4px;
+  width: 100%;
+  height: $footer-height;
+
+  div {
+    background: #222;
+    width: 100%;
+    padding: 40px;
+    text-align: right;
+    color: $color-text-light-grey;
+
+    p {
+      color: $color-text-light-grey;
+      margin-top: 0;
+      font-size: 13px;
+
+      a:hover{
+        color: $color-abc-blue;
+      }
+    }
+  }
+}
+
+@import
+  "home.scss",
+  "map.scss",
+  "pubs.scss",
+  "walks.scss"
+;

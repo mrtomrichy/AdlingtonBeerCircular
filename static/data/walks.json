@@ -1,0 +1,88 @@
+{
+    "walks": [
+      {
+        "title": "The Original 10",
+        "link": "/static/walkdocs/ABC_The_Original_10.pdf",
+        "beer": "10",
+        "distance": "5",
+        "description": "This walk takes in the 10 original ABC real ale pubs in and around the village. It is do-able, but it can be stressful on the feet and should only be attempted by the hardened drinker/walker"
+      },
+      {
+        "title": "The Original 10 + 2",
+        "link": "/static/walkdocs/ABC_The_Original_10+2.pdf",
+        "beer": "12",
+        "distance": "5",
+        "description": "This is the same walk as the original 10, but there are 2 extra pubs which have since been added to the site, so it would be rude not to pay them a visit. Due to the time it may take, half pints might be the order of the day here. "
+      },
+      {
+        "title": "Bottom End, Top End and back",
+        "link": "/static/walkdocs/ABC_Bottom_End_Top_End_And_Back.pdf",
+        "beer": "7",
+        "distance": "2",
+        "description": "This is the shortest walk but still takes in 7 pubs around the village. All road based with no real countryside though. Recommended if you have only a couple of hours to spare!"
+      },
+      {
+        "title": "Local Favourite",
+        "link": "/static/walkdocs/ABC_Local_Favourite.pdf",
+        "beer": "7",
+        "distance": "4",
+        "description": "This is a nice length of walk, 7 pubs and you can take this in a leisurely manner but does get muddy in places"
+      },
+      {
+        "title": "The Left Hand Side",
+        "link": "/static/walkdocs/ABC_The_Left_Hand_Side.pdf",
+        "beer": "7",
+        "distance": "3.5",
+        "description": "A middle distance walk taking in 8 pubs. Not too taxing on the feet and enough stops for everyone. Can get muddy in part."
+      },
+      {
+        "title": "The Right Hand Side",
+        "link": "/static/walkdocs/ABC_The_Right_Hand_Side.pdf",
+        "beer": "7",
+        "distance": "3.5",
+        "description": "Similar distance to the left, but this now has 9 pubs again, good for drinkers and walkers of all levels!"
+      },
+      {
+        "title": "Three Spinners, Three Horses",
+        "link": "/static/walkdocs/ABC_Three_Spinners_Three_Horses.pdf",
+        "beer": "6",
+        "distance": "5",
+        "description": "This walk is a longer walk, and still takes in a good number of pubs, but there is a longer section in the middle where you will go for a while with no pub visit. "
+      },
+      {
+        "title": "The Long One With Added Scenery",
+        "link": "/static/walkdocs/ABC_The_Long_One_With_Added_Scenery.pdf",
+        "beer": "6",
+        "distance": "5",
+        "description": "This walk is a longer walk, and still takes in a good number of pubs, but there is a longer section in the middle where you will go for a while with no pub visit. "
+      },
+      {
+        "title": "The Road To Bolton And Back",
+        "link": "/static/walkdocs/ABC_The_Road_To_Bolton_And_Back.pdf",
+        "beer": "8",
+        "distance": "4",
+        "description": "This walk is a longer walk, and still takes in a good number of pubs, but there is a longer section in the middle where you will go for a while with no pub visit. "
+      },
+      {
+        "title": "Little Scotland",
+        "link": "/static/walkdocs/ABC_Little_Scotland.pdf",
+        "beer": "5",
+        "distance": "3",
+        "description": "This walk is a longer walk, and still takes in a good number of pubs, but there is a longer section in the middle where you will go for a while with no pub visit. "
+      },
+      {
+        "title": "Worthington",
+        "link": "/static/walkdocs/ABC_Worthington.pdf",
+        "beer": "4",
+        "distance": "3.5",
+        "description": "This walk is a longer walk, and still takes in a good number of pubs, but there is a longer section in the middle where you will go for a while with no pub visit. "
+      },
+      {
+        "title": "Little Scotland And Worthington",
+        "link": "/static/walkdocs/ABC_Little_Scotland_And_Worthington.pdf",
+        "beer": "6",
+        "distance": "4.5",
+        "description": "This walk is a longer walk, and still takes in a good number of pubs, but there is a longer section in the middle where you will go for a while with no pub visit. "
+      }
+    ]
+}
