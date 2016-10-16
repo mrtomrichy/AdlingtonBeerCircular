@@ -13,6 +13,24 @@
   #dropdown-wrapper {
     display: none;
     position: relative;
+    margin-bottom: 30px;
+
+    .dropdown-toggle {
+      position: relative;
+      display: inline-block;
+      padding-right: 20px;
+      padding-bottom: 4px;
+      margin-bottom: 5px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-right: 14px solid $color-abc-red;
+        border-top: 14px solid transparent;
+      }
+    }
 
     .dropdown-menu {
       background-color: $color-body-white;
@@ -50,33 +68,35 @@
     }
   }
 
-  .nav-pills > li{
-    font-family: "Lato", helvetica;
-    font-size: 16px;
+  .nav-pills {
+     > li{
+      font-family: "Lato", helvetica;
+      font-size: 16px;
 
-    a {
-      border-radius: 0;
-      color: $color-text-grey;
-
-      &:hover, &:focus {
+      a {
+        border-radius: 0;
         color: $color-text-grey;
-      }
-    }
 
-    &.active {
-      > a {
-        background-color: $color-abc-red !important;
-        color: white !important;
+        &:hover, &:focus {
+          color: $color-text-grey;
+        }
       }
 
-      &:after {
-         content: "";
-         border-top: 21px solid transparent;
-         border-bottom: 21px solid transparent;
-         border-left: 10px solid $color-abc-red;
-         position: absolute;
-         right: -10px;
-         top: 0;
+      &.active {
+        > a {
+          background-color: $color-abc-red !important;
+          color: white !important;
+        }
+
+        &:after {
+           content: "";
+           border-top: 21px solid transparent;
+           border-bottom: 21px solid transparent;
+           border-left: 10px solid $color-abc-red;
+           position: absolute;
+           right: -10px;
+           top: 0;
+        }
       }
     }
   }
@@ -108,27 +128,34 @@
     font-weight: 300;
   }
 
-  #pub-facilities > li {
-    list-style-type: square;
-    color: $color-text-grey;
-    line-height: 22px;
-    font-family: "Lato", helvetica, sans-serif;
-    font-size: 16px;
+  .pub-info {
+
+    #pub-facilities {
+
+      li {
+        list-style-type: square;
+        color: $color-text-grey;
+        line-height: 22px;
+        font-family: "Lato", helvetica, sans-serif;
+        font-size: 16px;
+      }
+    }
   }
 
   .pub-img-wrapper {
     background: $color-body-dark;
     padding: 4px;
     position: relative;
-    border-radius: 2px;
+    border-radius: 5px;
+    margin-bottom: 40px;
 
     &:after {
       position: absolute;
-      bottom: -50px;
-      right: 0;
+      bottom: -40px;
+      right: 3px;
       content: "";
       border-left: 100px solid $color-body-dark-accent;
-      border-bottom: 50px solid transparent;
+      border-bottom: 40px solid transparent;
     }
 
     .pub-image {
@@ -161,6 +188,9 @@
     }
     .info-row {
       margin-top: 30px;
+    }
+    .pub-img-wrapper {
+      margin-bottom: 60px;
     }
   }
 }

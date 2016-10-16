@@ -1,0 +1,121 @@
+/* WALK PAGE STYLING */
+
+#walks {
+  padding-bottom: 30px;
+
+  .jumbotron {
+    color: white;
+    background-image: url($base-url + '/static/images/rivingtonwidefull.png');
+    background-size: cover;
+    background-position: top center;
+    padding-top: 35px !important;
+    padding-bottom: 45px !important;
+    margin-bottom: 0;
+    border-top: 2px solid $color-body-dark;
+
+    h1 {
+      text-shadow: 1px 1px 2px #0D0D0D;
+    }
+  }
+
+  .separator {
+    width: 100%;
+    height: 3px;
+    background: $abc-gradient-dark;
+  }
+
+  .walk-container {
+    margin-top: 40px;
+  }
+
+  .walks-container {
+    margin-top: 40px;
+  }
+
+  .walk-img {
+    float: right;
+    max-width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+    animation: none;
+  }
+
+  .walk-box {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    height: 100%;
+
+    .walk-wrapper {
+      padding: 10px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      overflow: hidden;
+      background-color: $color-body-dark;
+      color: $color-text-light-grey;
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: inherit;
+
+        a {
+          width: 100%;
+          color: inherit;
+          &:hover {
+            color: inherit;
+          }
+        }
+      }
+
+      span.glyphicon {
+        font-size: 15px;
+        margin-left: 10px;
+        line-height: 22px;
+      }
+
+      p {
+        color: inherit;
+        position: relative;
+        padding-left: 10px;
+        line-height: 26px;
+        vertical-align: middle;
+
+        span {
+          margin-left: 8px;
+          font-size: 22px;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: -10px;
+          border-left: 10px solid $color-abc-blue;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+          &:before {
+            border-left: 10px solid $color-abc-red;
+          }
+        }
+      }
+    }
+
+    p.description {
+      padding: 6px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .walk-img {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}

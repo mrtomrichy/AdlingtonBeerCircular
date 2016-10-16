@@ -14,34 +14,37 @@ layout: default
 
 			<div id="pub-info" data-bind="with: activePub"class='col-md-9'>
 
-				<div class='row'>
-					<div class='col-md-6'>
-
+				<div class="row">
+					<div class="col-md-12">
 						<div id="dropdown-wrapper">
 							<div id="pub-nav-drop" class="dropdown">
 								<h1 class="dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 									<span data-bind="text: name"></span>
-									<span class="caret"></span>
 								</h1>
 								<ul class="dropdown-menu" data-bind="foreach: $parent.pubList" aria-labelledby="dropdownMenu">
-									<li><a href="#" data-bind="click: function(){$root.changePub($data)}, text: name"></a></li>
+									<li><a data-bind="click: function(){$root.changePub($data)}, text: name"></a></li>
 								</ul>
 							</div>
 						</div>
 
 						<h1 id='pub-name' data-bind="text: name"></h1>
-						<p id='pub-description' data-bind="text: description"></p>
 					</div>
-					<div id='pub-img-holder' class='col-md-6'>
+				</div>
+
+				<div class='row'>
+					<div id='pub-img-holder' class='col-md-6 col-md-push-6'>
 						<div class="pub-img-wrapper">
 							<img class='pub-image' data-bind="attr:{src: '{{ site.baseurl }}' + image}" />
 						</div>
 					</div>
+
+					<div class='col-md-6 col-md-pull-6'>
+						<p id='pub-description' data-bind="text: description"></p>
+					</div>
 				</div>
 
 				<div class='row info-row'>
-					<div class='col-md-12'>
-						<div style='float:left; min-width: 180px; margin-right: 40px;'>
+						<div class="col-sm-5 pub-info">
 							<h3>Facilities</h3>
 							<ul id='pub-facilities'>
 								<li data-bind="visible: bg">Beer Garden/Smoking Area</li>
@@ -55,15 +58,14 @@ layout: default
 								<li data-bind="visible: quiz">Quiz</li>
 							</ul>
 						</div>
-						<div style='float:left; min-width: 250px;'>
+						<div class="col-sm-6 pub-info">
 							<h3 data-bind="visible: email !== '' || phone !== '' || web !== '' || twitter !== '' || facebook !== ''">Contact</h3>
 							<p id='email' data-bind="visible: email !== ''"><b>E: </b><span data-bind="text: email"></span></p>
 							<p id='phone' data-bind="visible: phone !== ''"><b>P: </b><span data-bind="text: phone"></span></p>
-							<p id='website' data-bind="visible: web !== ''"><b>W: </b><span data-bind="text: web"></span></p>
+							<p id='website' data-bind="visible: web !== ''"><b>W: </b><a data-bind="text: web, attr: {href: 'http://' + web, target: '_blank'}"></a></p>
 							<p id='twitter' data-bind="visible: twitter !== ''"><b>T: </b><span data-bind="text: twitter"></span></p>
 							<p id='facebook' data-bind="visible: facebook !== ''"><b>F: </b><span data-bind="text: facebook"></span></p>
 						</div>
-					</div>
 				</div>
 			</div>
 		</div>

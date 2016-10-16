@@ -1,0 +1,117 @@
+#home {
+  .jumbotron {
+    color: white;
+    background-image: url($base-url + '/static/images/rivingtonwidefull.png');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 0;
+    border-top: 2px solid $color-body-dark;
+    padding: 0;
+
+    .container {
+      @media (max-width: 768px) {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+      }
+    }
+
+    h1 {
+      text-shadow: 1px 1px 2px #0D0D0D;
+    }
+
+    p {
+      color: #DDDDDD;
+      text-shadow: 1px 1px 2px #0D0D0D;
+    }
+
+    .no-shadow {
+      text-shadow: none !important;
+    }
+  }
+
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  h1.title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+
+  .welcome-text {
+    p {
+      margin-right: 12%;
+
+      &.signoff {
+        font-size: 19px;
+        margin-top: 30px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .separator {
+    height: 5px;
+    width: 100%;
+    background: $abc-gradient-dark;
+  }
+
+  .contact-panel {
+    background-color: $color-body-dark;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 45px;
+    width: 100%;
+
+    &:after {
+      content: "";
+      border-bottom: 45px solid transparent;
+      border-left: 100px solid $color-body-dark-accent;
+      height: 0;
+      width: 0;
+      position: absolute;
+      bottom: -45px;
+      right: 3px;
+    }
+
+    h3 {
+      height: 20px;
+      line-height: 20px;
+      position: relative;
+      margin-top: 0;
+      color: $color-text-light-grey;
+
+      &:before {
+        content: "";
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid $color-abc-blue;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: -5px;
+        left: -20px;
+      }
+    }
+
+    p {
+      color: $color-text-light-grey;
+      font-weight: 300;
+    }
+  }
+
+  @media(max-width: 991px) {
+    .welcome-text {
+      p {
+        margin-right: 0;
+      }
+    }
+
+    .contact-panel {
+      margin-top: 50px;
+    }
+  }
+}
